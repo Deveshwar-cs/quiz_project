@@ -1,0 +1,11 @@
+.auth-container {
+  width: 350px;
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #020617;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}

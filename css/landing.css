@@ -1,0 +1,134 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0d0716;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.navbar h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+/* ===== MENU ===== */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.navbar ul li:hover {
+  color: #a855f7;
+}
+
+/* ===== AUTH BUTTONS ===== */
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #a855f7;
+}
+
+/* ===== REGISTER BUTTON ===== */
+.btn {
+  background: #a855f7;
+  padding: 8px 18px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background: #9333ea;
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .navbar {
+    /* flex wrap need to learn */
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px 0;
+    gap: 10px;
+  }
+
+  .navbar ul {
+    /* Order topic */
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .navbar div {
+    order: 2;
+  }
+}
+
+/* ===== MOBILE STACK ===== */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar div {
+    justify-content: center;
+  }
+}
+
+.hero {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #94a3b8;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/practice.css" />
+  </head>
+  <body>
+    <nav class="navbar container">
+      <h2>QuizMaster</h2>
+
+      <!-- hamburger -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="right-nav">
+        <ul class="nav-list">
+          <li>Home</li>
+          <li>About</li>
+          <li>Feature</li>
+          <li>Contact</li>
+        </ul>
+        <div class="btn-div">
+          <a class="butn" href="login.html">Login</a>
+          <a class="butn" href="register.html">Register</a>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const rightNav = document.querySelector(".right-nav");
+
+      hamburger.addEventListener("click", () => {
+        rightNav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
